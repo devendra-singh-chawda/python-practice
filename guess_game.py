@@ -1,3 +1,4 @@
+# Import random module
 import random
 print(" Welcome to Number Guessing Game ")
 print(" Made by Devendra Singh Chawda ")
@@ -24,7 +25,7 @@ elif choice == "3":
 else:
     print("Invalid choice")
     exit()
-
+# Generate random numbe
 secret_number = random.randint(1, max_number)
 
 print("\nYou selected", difficulty, "mode")
