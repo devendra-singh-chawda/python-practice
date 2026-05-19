@@ -2,7 +2,9 @@ tasks = []
 
 while True:
 
+    print("\n==========================")
     print("      TO-DO LIST APP")
+    print("==========================")
     print("1. Add Task")
     print("2. View Tasks")
     print("3. Remove Task")
@@ -28,23 +30,33 @@ while True:
 
             print("\nYour Tasks:")
 
-            for task in tasks:
-
-                print("-", task)
+            for i, task in enumerate(tasks, start=1):
+                print(i, ".", task)
 
     elif choice == "3":
 
-        task = input("Enter task to remove: ")
+        if len(tasks) == 0:
 
-        if task in tasks:
-
-            tasks.remove(task)
-
-            print("Task removed successfully!")
+            print("No tasks available")
 
         else:
 
-            print("Task not found")
+            print("\nYour Tasks:")
+
+            for i, task in enumerate(tasks, start=1):
+                print(i, ".", task)
+
+            task_number = int(input("Enter task number to remove: "))
+
+            if 1 <= task_number <= len(tasks):
+
+                removed_task = tasks.pop(task_number - 1)
+
+                print("Removed task:", removed_task)
+
+            else:
+
+                print("Invalid task number")
 
     elif choice == "4":
 
