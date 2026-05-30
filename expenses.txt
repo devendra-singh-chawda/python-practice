@@ -1,0 +1,4 @@
+Pizza - 200
+Burger - 150
+Coffee - 80
+cofffee - 200
