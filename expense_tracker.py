@@ -1,6 +1,6 @@
 while True:
 
-    print("\n--- Expense Tracker ---")
+    print("\nExpense Tracker ")
 
     print("1. Add Expense")
 
